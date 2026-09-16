@@ -128,28 +128,32 @@ rss:
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
     # ── 论文 / 期刊（官方 RSS，无需 RSSHub）──
-    - id: "arxiv-ai"
-      name: "arXiv cs.AI"
-      url: "https://rss.arxiv.org/rss/cs.AI"
+
     - id: "arxiv-physics-optics"
       name: "arXiv physics.optics"
       url: "https://rss.arxiv.org/rss/physics.optics"
-
+      filter: "anti-resonant OR hollow-core OR AR-HCF"
+      
     - id: "arxiv-physics-app-ph"
       name: "arXiv physics.app-ph"
       url: "https://rss.arxiv.org/rss/physics.app-ph"
+      filter: "anti-resonant OR hollow-core OR AR-HCF"
 
     - id: "arxiv-eess-sp"
       name: "arXiv eess.SP"
       url: "https://rss.arxiv.org/rss/eess.SP"
+      filter: "anti-resonant OR hollow-core OR AR-HCF"
 
     - id: "arxiv-cs-ar"
       name: "arXiv cs.AR"
       url: "https://rss.arxiv.org/rss/cs.AR"
-
+      filter: "anti-resonant OR hollow-core OR AR-HCF"
+      
     - id: "nature"
       name: "Nature"
       url: "https://www.nature.com/nature.rss"
+      filter: "anti-resonant OR hollow-core OR AR-HCF"
+      
       max_age_days: 7                 # 周刊更新慢，单独放宽到 7 天
       
       enabled: false                  # 禁用
